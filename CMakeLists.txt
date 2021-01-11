@@ -57,6 +57,7 @@ endif()
 
 add_library(cereal INTERFACE)
 add_library(cereal::cereal ALIAS cereal)
+target_link_libraries(cereal INTERFACE rapidjson)
 target_include_directories(cereal INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>

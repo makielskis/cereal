@@ -61,10 +61,10 @@ namespace cereal
 #define CEREAL_RAPIDJSON_PARSE_DEFAULT_FLAGS kParseFullPrecisionFlag | kParseNanAndInfFlag
 #endif
 
-#include "cereal/external/rapidjson/prettywriter.h"
-#include "cereal/external/rapidjson/ostreamwrapper.h"
-#include "cereal/external/rapidjson/istreamwrapper.h"
-#include "cereal/external/rapidjson/document.h"
+#include "rapidjson/prettywriter.h"
+#include "rapidjson/ostreamwrapper.h"
+#include "rapidjson/istreamwrapper.h"
+#include "rapidjson/document.h"
 #include "cereal/external/base64.hpp"
 
 #include <limits>
@@ -72,6 +72,8 @@ namespace cereal
 #include <stack>
 #include <vector>
 #include <string>
+
+#define CEREAL_RAPIDJSON_NAMESPACE rapidjson
 
 namespace cereal
 {
